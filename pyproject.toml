@@ -1,5 +1,5 @@
 [project]
-name = "etl-pipeline-for-department-of-energy"
+name = "etl_department_of_energy"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -7,10 +7,12 @@ authors = [
     { name = "Salma Afifi", email = "salma.afifi5555@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "pandas>=3.1.1",
+]
 
 [project.scripts]
-etl-pipeline-for-department-of-energy = "etl_pipeline_for_department_of_energy:main"
+etl_department_of_energy = "etl_department_of_energy.main:main"
 
 [build-system]
 requires = ["uv_build>=0.13.6,<0.14.0"]
